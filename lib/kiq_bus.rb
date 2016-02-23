@@ -1,0 +1,2 @@
+module KiqBus
+end
