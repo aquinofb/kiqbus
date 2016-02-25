@@ -3,7 +3,6 @@ PATH
   specs:
     kiq_bus (0.0.2)
       rails (~> 4)
-      sidekiq (~> 4)
 
 GEM
   remote: https://rubygems.org/
@@ -120,6 +119,7 @@ PLATFORMS
 DEPENDENCIES
   kiq_bus!
   pry
+  sidekiq (~> 4)
   sqlite3
 
 BUNDLED WITH

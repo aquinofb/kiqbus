@@ -14,12 +14,12 @@ Gem::Specification.new do |s|
   s.description = "TODO: Description of KiqBus."
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4"
-  s.add_dependency "sidekiq", "~> 4"
 
+  s.add_development_dependency "sidekiq", "~> 4"
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "pry"
 end
