@@ -1,8 +1,9 @@
 PATH
   remote: .
   specs:
-    kiq_bus (0.0.1)
-      rails (~> 4.2.5.1)
+    kiq_bus (0.0.2)
+      rails (~> 4)
+      sidekiq (~> 4)
 
 GEM
   remote: https://rubygems.org/
@@ -46,6 +47,7 @@ GEM
     builder (3.2.2)
     coderay (1.1.1)
     concurrent-ruby (1.0.0)
+    connection_pool (2.2.0)
     erubis (2.7.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
@@ -93,11 +95,16 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.5.0)
+    redis (3.2.2)
+    sidekiq (4.1.0)
+      concurrent-ruby (~> 1.0)
+      connection_pool (~> 2.2, >= 2.2.0)
+      redis (~> 3.2, >= 3.2.1)
     slop (3.6.0)
     sprockets (3.5.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.0.1)
+    sprockets-rails (3.0.2)
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)

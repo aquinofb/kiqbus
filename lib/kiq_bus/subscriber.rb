@@ -1,15 +1,17 @@
 module KiqBus
   class Subscriber
 
-    def initialize class_name, action, &block
-      @subscribed_class, @action, @block = class_name, action, block
+    def initialize model_class, action
+      @model_class, @action = model_class, action
+    end
+
+    def equal? model_class, action=:call
+      @model_class.eql?(model_class) && @action.eql?(action)
     end
 
     def call *args
-      # Run on background job or Thread(Beware of db connections)
-      klass = @subscribed_class.constantize
-      klass.send(@action, *args) if klass.respond_to?(@action)
-      @block.call(*args) if @block.present?
+      klass = @model_class.constantize
+      klass.delay.send(@action, *args) if klass.respond_to?(@action)
     end
   end
 end
