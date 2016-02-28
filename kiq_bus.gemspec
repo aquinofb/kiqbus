@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["aquinofb"]
   s.email       = ["aquinofb@gmail.com"]
   s.homepage    = "https://github.com/aquinofb/kiqbus"
-  s.summary     = "A simple pubsub for Rails event based applications."
-  s.description = "Provides support for Rails event based applications."
+  s.summary     = "A simple pubsub for decoupled Rails event based applications."
+  s.description = "Provides support for decoupled Rails event based applications."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
