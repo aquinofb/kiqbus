@@ -1,6 +1,5 @@
 module KiqBus
   class Subscriber
-
     def initialize model_class, action
       @model_class, @action = model_class, action
     end

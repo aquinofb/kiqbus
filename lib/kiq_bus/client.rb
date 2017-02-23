@@ -1,6 +1,5 @@
 module KiqBus
   class Client
-
     cattr_reader :subscribers
     @@subscribers = {}
 

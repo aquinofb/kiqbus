@@ -1,6 +1,5 @@
 module KiqBus
   class BackgroundJob
-
     cattr_accessor :adapter
     @@adapter = KiqBus::Adapters::Sidekiq # default adapter
 

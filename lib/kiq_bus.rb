@@ -14,6 +14,4 @@ module KiqBus
   class << self
     delegate :subscribe, :broadcast, :unsubscribe, to: :'KiqBus::Client'
   end
-
-  puts "-="*10000
 end
